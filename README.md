@@ -50,7 +50,7 @@
   <div class="container">
     <h1>Gondoltam egy számra 1 és 100 között!</h1>
     <p>Ki tudod találni?</p>
-    <input type="number" id="guess" placeholder="Tippt">
+    <input type="number" id="guess" placeholder="Tipp">
     <button onclick="checkGuess()">Tippeld meg</button>
     <p id="message"></p>
   </div>
