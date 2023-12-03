@@ -55,15 +55,16 @@
 <body>
   <div class="container">
     <h1>Gondoltam egy számra 1 és 100 között!</h1>
-    <p>Te hány tippel talásod ki?</p>
-    <input type="number" id="guess" placeholder="Tipp">
-    <button onclick="checkGuess()">Tipp Gomb</button>
+    <p>Te hány tippből találod ki?</p>
+    <input type="number" id="guess" placeholder="Tipp" onkeydown="if (event.keyCode == 13) document.getElementById('checkButton').click()">
+    <button id="checkButton" onclick="checkGuess()">Tipp Gomb</button>
     <p id="message"></p>
     <label for="theme">Háttérszín változtatása: </label>
     <select id="theme" onchange="changeBackground()">
-      <option value="f4f4f4">Alapértelmezett</option>
-      <option value="lightblue">Világoskék</option>
-      <option value="lightgreen">Világoszöld</option>
+      <option value="#f4f4f4">Alapértelmezett</option>
+      <option value="#000">Fekete</option>
+      <option value="#808080">Szürke</option>
+      <option value="#fff">Fehér</option>
     </select>
   </div>
   <script>
@@ -77,17 +78,11 @@
         showMessage(`Gratulálok! ${attempts} próbálkozásból találtad el a számot!`, 'green');
       } else if (userGuess < randomNumber) {
         showMessage('Túl alacsony, próbáld újra!', 'red');
-        document.body.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-        setTimeout(function() {
-          document.body.style.backgroundColor = '#f4f4f4';
-        }, 500);
       } else {
         showMessage('Túl magas, próbáld újra!', 'red');
-        document.body.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-        setTimeout(function() {
-          document.body.style.backgroundColor = '#f4f4f4';
-        }, 500);
       }
+      document.getElementById('guess').value = '';
+      changeBackground();
     }
 
     function showMessage(message, color) {
@@ -102,7 +97,9 @@
 
     function changeBackground() {
       let selectedColor = document.getElementById('theme').value;
-      document.body.style.backgroundColor = selectedColor;
+      if (document.getElementById('guess').value == randomNumber) {
+        document.body.style.backgroundColor = selectedColor;
+      }
     }
   </script>
 </body>
