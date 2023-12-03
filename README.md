@@ -1,55 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-  <title>Űrlap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szám kitaláló játék</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    form {
-      margin: 50px auto;
-      width: 50%;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-sizing: border-box;
-    }
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 15px 20px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <form>
-    <label for="name">Név:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Üzenet:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    <input type="submit" value="Küldés">
-  </form>
+  <h1>Gondolj egy számra 1 és 100 között!</h1>
+  <p>Nézd meg, hogy milyen gyorsan kitalálom!</p>
+  <input type="number" id="guess" placeholder="Tippeld meg a számot">
+  <button onclick="checkGuess()">Tippeld meg</button>
+  <p id="message"></p>
+  <script>
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    function checkGuess() {
+      let userGuess = document.getElementById('guess').value;
+      attempts++;
+      if (userGuess == randomNumber) {
+        document.getElementById('message').innerHTML = `Gratulálok! ${attempts} próbálkozásból találtad el a számot!`;
+      } else if (userGuess < randomNumber) {
+        document.getElementById('message').innerHTML = 'Túl alacsony, próbáld újra!';
+      } else {
+        document.getElementById('message').innerHTML = 'Túl magas, próbáld újra!';
+      }
+    }
+  </script>
 </body>
 </html>
