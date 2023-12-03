@@ -55,10 +55,16 @@
 <body>
   <div class="container">
     <h1>Gondoltam egy számra 1 és 100 között!</h1>
-    <p>Te ki tudod találni?</p>
+    <p>Te hány tippel talásod ki?</p>
     <input type="number" id="guess" placeholder="Tipp">
     <button onclick="checkGuess()">Tipp Gomb</button>
     <p id="message"></p>
+    <label for="theme">Háttérszín változtatása: </label>
+    <select id="theme" onchange="changeBackground()">
+      <option value="f4f4f4">Alapértelmezett</option>
+      <option value="lightblue">Világoskék</option>
+      <option value="lightgreen">Világoszöld</option>
+    </select>
   </div>
   <script>
     let randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -92,6 +98,11 @@
       setTimeout(function() {
         messageElement.classList.remove('show');
       }, 2000);
+    }
+
+    function changeBackground() {
+      let selectedColor = document.getElementById('theme').value;
+      document.body.style.backgroundColor = selectedColor;
     }
   </script>
 </body>
