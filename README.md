@@ -43,15 +43,20 @@
     p {
       margin-top: 20px;
       font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .show {
+      opacity: 1;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Gondoltam egy számra 1 és 100 között!</h1>
-    <p>Ki tudod találni?</p>
+    <p>Te ki tudod találni?</p>
     <input type="number" id="guess" placeholder="Tipp">
-    <button onclick="checkGuess()">Tippeld meg</button>
+    <button onclick="checkGuess()">Tippelő gomb</button>
     <p id="message"></p>
   </div>
   <script>
@@ -62,12 +67,22 @@
       let userGuess = document.getElementById('guess').value;
       attempts++;
       if (userGuess == randomNumber) {
-        document.getElementById('message').innerHTML = `Gratulálok! ${attempts} próbálkozásból találtad el a számot!`;
+        showMessage(`Gratulálok! ${attempts} próbálkozásból találtad el a számot!`, 'green');
       } else if (userGuess < randomNumber) {
-        document.getElementById('message').innerHTML = 'Túl alacsony, próbáld újra!';
+        showMessage('Túl alacsony, próbáld újra!', 'red');
       } else {
-        document.getElementById('message').innerHTML = 'Túl magas, próbáld újra!';
+        showMessage('Túl magas, próbáld újra!', 'red');
       }
+    }
+
+    function showMessage(message, color) {
+      let messageElement = document.getElementById('message');
+      messageElement.innerHTML = message;
+      messageElement.style.color = color;
+      messageElement.classList.add('show');
+      setTimeout(function() {
+        messageElement.classList.remove('show');
+      }, 2000);
     }
   </script>
 </body>
