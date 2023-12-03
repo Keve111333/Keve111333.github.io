@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
@@ -8,15 +7,53 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    p {
+      margin-top: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Gondolj egy számra 1 és 100 között!</h1>
-  <p>Nézd meg, hogy milyen gyorsan kitalálom!</p>
-  <input type="number" id="guess" placeholder="Tippeld meg a számot">
-  <button onclick="checkGuess()">Tippeld meg</button>
-  <p id="message"></p>
+  <div class="container">
+    <h1>Gondolj egy számra 1 és 100 között!</h1>
+    <p>Nézd meg, hogy milyen gyorsan kitalálom!</p>
+    <input type="number" id="guess" placeholder="Tippeld meg a számot">
+    <button onclick="checkGuess()">Tippeld meg</button>
+    <p id="message"></p>
+  </div>
   <script>
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     let attempts = 0;
