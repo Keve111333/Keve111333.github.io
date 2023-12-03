@@ -48,9 +48,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Gondolj egy számra 1 és 100 között!</h1>
-    <p>Nézd meg, hogy milyen gyorsan kitalálom!</p>
-    <input type="number" id="guess" placeholder="Tippeld meg a számot">
+    <h1>Gondoltam egy számra 1 és 100 között!</h1>
+    <p>Ki tudod találni?</p>
+    <input type="number" id="guess" placeholder="Tippt">
     <button onclick="checkGuess()">Tippeld meg</button>
     <p id="message"></p>
   </div>
