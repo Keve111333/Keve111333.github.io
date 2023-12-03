@@ -14,6 +14,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      transition: background-color 0.5s;
     }
     .container {
       background-color: #fff;
@@ -56,7 +57,7 @@
     <h1>Gondoltam egy számra 1 és 100 között!</h1>
     <p>Te ki tudod találni?</p>
     <input type="number" id="guess" placeholder="Tipp">
-    <button onclick="checkGuess()">Tippelő gomb</button>
+    <button onclick="checkGuess()">Tipp Gomb</button>
     <p id="message"></p>
   </div>
   <script>
@@ -70,8 +71,16 @@
         showMessage(`Gratulálok! ${attempts} próbálkozásból találtad el a számot!`, 'green');
       } else if (userGuess < randomNumber) {
         showMessage('Túl alacsony, próbáld újra!', 'red');
+        document.body.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        setTimeout(function() {
+          document.body.style.backgroundColor = '#f4f4f4';
+        }, 500);
       } else {
         showMessage('Túl magas, próbáld újra!', 'red');
+        document.body.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        setTimeout(function() {
+          document.body.style.backgroundColor = '#f4f4f4';
+        }, 500);
       }
     }
 
