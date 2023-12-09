@@ -27,6 +27,15 @@
   </style>
   <script>
     let binaryNumbers = document.getElementById("binaryNumbers");
+    let interval;
+
+    function startGeneratingBinary() {
+      interval = setInterval(generateRandomBinary, 1000);
+    }
+
+    function stopGeneratingBinary() {
+      clearInterval(interval);
+    }
 
     function generateRandomBinary() {
       let binary = Math.floor(Math.random() * 2);
@@ -38,7 +47,7 @@
   <h1>HACKER MÓD</h1>
   <p>Bejelentkezés engedélyezve...</p>
   <div id="binaryNumbers"></div>
-  <button onclick="generateRandomBinary()">Generálás</button>
-  <button onclick="location.reload()">Újra</button>
+  <button onclick="startGeneratingBinary()">Generálás</button>
+  <button onclick="stopGeneratingBinary()">Leállítás</button>
 </body>
 </html>
