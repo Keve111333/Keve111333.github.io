@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>Hacker Mód</title>
@@ -16,10 +15,30 @@
     p {
       font-size: 24px;
     }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 20px;
+      background-color: green;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
   </style>
+  <script>
+    let binaryNumbers = document.getElementById("binaryNumbers");
+
+    function generateRandomBinary() {
+      let binary = Math.floor(Math.random() * 2);
+      binaryNumbers.textContent += binary;
+    }
+  </script>
 </head>
 <body>
   <h1>HACKER MÓD</h1>
   <p>Bejelentkezés engedélyezve...</p>
+  <div id="binaryNumbers"></div>
+  <button onclick="generateRandomBinary()">Generálás</button>
+  <button onclick="location.reload()">Újra</button>
 </body>
 </html>
