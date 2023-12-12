@@ -6,26 +6,15 @@
 </head>
 <body>
 
-<h1>Küldj e-mailt!</h1>
+<h1>Választási opciók:</h1>
+<h2>1: og minta</h2>
+<h2>2: karácsonyi minta</h2>
+<h1>emailben külld el a választásod! </h1>
 
 <!-- Gomb a Gmail linkhez -->
-<a id="emailButton" href="javascript:void(0);" onclick="setRandomSubject();" target="_blank">
+<a href="mailto:gorduskapodcast@gmail.com" target="_blank">
     <button type="button">E-mail küldése</button>
 </a>
-
-<script>
-    // JavaScript kód a random szám generálásához
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    // Függvény a gomb kattintására
-    function setRandomSubject() {
-        var randomSubject = "Tárgy #" + getRandomInt(1, 99999);
-        var mailtoLink = "mailto:cimzett@gmail.com?subject=" + encodeURIComponent(randomSubject);
-        window.location.href = mailtoLink;
-    }
-</script>
 
 </body>
 </html>
