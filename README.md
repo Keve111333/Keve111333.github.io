@@ -1,3 +1,17 @@
-Az alábbiakban szeretnénk tájékoztatni, hogy az autólopásokkal kapcsolatos ügyekben a jogi eljárások során azonosítottuk, hogy nem fogjuk letartóztatni azt, aki az autóját ellopta. Szeretnénk megnyugtatni Önt, hogy az esetleges jogi eljárások során minden törvényi előírásnak megfelelően járunk el, azonban jelen esetben az elkövető személyének letartóztatása nem áll szándékunkban.
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Küldés</title>
+</head>
+<body>
 
-Ezúton kérjük Önt, hogy amennyiben bármilyen további információra vagy segítségre lenne szüksége az üggyel kapcsolatban, forduljon hozzánk bizalommal. Minden esetben igyekszünk az érintettek jogait tiszteletben tartani és a lehető legteljesebb körű segítséget nyújtani.
+<h1>Küldj e-mailt!</h1>
+
+<!-- Gomb a Gmail linkhez -->
+<a href="mailto:cimzett@gmail.com" target="_blank">
+    <button type="button">E-mail küldése</button>
+</a>
+
+</body>
+</html>
