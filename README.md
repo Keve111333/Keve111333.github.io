@@ -9,7 +9,7 @@
 <h1>Küldj e-mailt!</h1>
 
 <!-- Gomb a Gmail linkhez -->
-<a href="mailto:cimzett@gmail.com" target="_blank">
+<a href="mailto:gorduskapodcast@gmail.com" target="_blank">
     <button type="button">E-mail küldése</button>
 </a>
 
