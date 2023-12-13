@@ -83,13 +83,13 @@
 <h1>Exkluzív Termékek</h1>
 
 <div class="product">
-    <img src="product1.jpg" alt="Termék 1">
+    <img src="og_merch.jpg" alt="Termék 1">
     <h2>OG Merch</h2>
     <p>Ár: 5500Ft</p>
 </div>
 
 <div class="product">
-    <img src="product2.jpg" alt="Termék 2">
+    <img src="karacsonyi_merch.jpg" alt="Termék 2">
     <h2>Karácsonyi Merch</h2>
     <p>Ár: 5800Ft</p>
 </div>
