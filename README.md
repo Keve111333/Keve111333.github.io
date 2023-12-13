@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorduska PodCast Official Merch</title>
+    <title>Webshop</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -14,98 +14,106 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             color: #333;
         }
+
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
-        h2, h3 {
-            font-weight: normal;
-            color: #555;
-            margin: 5px 0;
-        }
-        h3 {
+
+        p {
             color: #777;
         }
-        button {
-            padding: 15px 30px;
-            background-color: #4CAF50;
-            color: white;
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            font-size: 1.2em;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        button:hover {
-            background-color: #45a049;
+
+        .button:hover {
+            background-color: #0056b3;
         }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        .merch-options {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
+        .promo-container {
             margin-top: 30px;
-        }
-        .merch-option {
             padding: 20px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            margin-bottom: 20px;
-        }
-        .merch-option:hover {
-            transform: scale(1.05);
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
-<h1>Gorduska PodCast Official Merch</h1>
-<h2>Exkluzív Merch Kollekció</h2>
+<h1>Exkluzív Termékek</h1>
 
-<div class="merch-options">
-    <div class="merch-option">
-        <h3>OG Merch</h3>
-        <p>6000Ft</p>
-        <button type="button">Megnézem</button>
-    </div>
-
-    <div class="merch-option">
-        <h3>Karácsonyi Merch</h3>
-        <p>6000Ft</p>
-        <button type="button">Megnézem</button>
-    </div>
-
-    <div class="merch-option">
-        <h3>Mindkettő</h3>
-        <p>10000Ft (17% akció)</p>
-        <!-- A "Megnézem" gombot itt eltávolítottam -->
-    </div>
+<div class="product">
+    <img src="product1.jpg" alt="Termék 1">
+    <h2>OG Merch</h2>
+    <p>Ár: 5500Ft</p>
 </div>
 
-<!-- Gomb a Gmail linkhez -->
-<a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
-    <button type="button">E-mail küldése</button>
-</a>
+<div class="product">
+    <img src="product2.jpg" alt="Termék 2">
+    <h2>Karácsonyi Merch</h2>
+    <p>Ár: 5800Ft</p>
+</div>
 
-<!-- Gomb a YouTube linkhez -->
-<a href="https://youtu.be/mnjOLKoLiX8" target="_blank">
-    <button type="button">Tutorial (fontos) </button>
-</a>
+<div class="product">
+    <img src="product3.jpg" alt="Termék 3">
+    <h2>Gordus Aláírás Kártya</h2>
+    <p>Ár: 1000Ft</p>
+</div>
 
-<a href="https://youtube.com/shorts/gc2SFRRbQHM" target="_blank">
-    <button type="button">Tutorial (fizetésről) </button>
-</a>
+<div class="button-container">
+    <a href="https://youtu.be/mnjOLKoLiX8" target="_blank" class="button">tutorial (e-mail)</a>
+    <a href="https://youtube.com/shorts/gc2SFRRbQHM" target="_blank" class="button">tutorial (fizetés)</a>
+    <a href="mailto:gorduskapodcast@gmail.com?subject=vasarlas" target="_blank" class="button">E-mail</a>
+</div>
+
+<div class="promo-container">
+    <h2>Promód</h2>
+    <p>Használd az alábbi kódot e-mailsorán:</p>
+    <ul>
+        <li>MINDHAROM2324 - 10% kedvezmény</li>
+    </ul>
+    <p>A promókódokat a pénztárnál add meg a megfelelő mezőben.</p>
+</div>
 
 </body>
 </html>
