@@ -13,8 +13,9 @@
         }
         h1 {
             color: #333;
+            animation: fadeIn 1.5s ease-out;
         }
-        h2 {
+        h2, h3 {
             color: #555;
         }
         h3 {
@@ -28,10 +29,18 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
         }
         a {
             text-decoration: none;
             color: #007BFF;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -44,7 +53,7 @@
 <h3>3: Mindkettő [10000Ft] (17% akció)</h3>
 
 <!-- Gomb a Gmail linkhez -->
-<a href="mailto:gorduskapodcast@gmail.com?subject=merch vásárlás" target="_blank">
+<a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
     <button type="button">E-mail küldése</button>
 </a>
 
