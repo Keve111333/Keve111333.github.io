@@ -95,7 +95,7 @@
 </div>
 
 <div class="product">
-    <img src="product3.jpg" alt="Termék 3">
+    <img src="IMG_20231213_192239.jpg" alt="Termék 3">
     <h2>Gordus Aláírás Kártya</h2>
     <p>Ár: 1000Ft</p>
 </div>
