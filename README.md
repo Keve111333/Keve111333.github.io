@@ -16,7 +16,6 @@
             justify-content: center;
             height: 100vh;
             color: #333;
-            margin-top: 0; /* Nullára állítva */
         }
         h1 {
             font-size: 3em;
@@ -67,11 +66,6 @@
         .merch-option:hover {
             transform: scale(1.05);
         }
-        .merch-image {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
@@ -81,28 +75,26 @@
 
 <div class="merch-options">
     <div class="merch-option">
-        <img src="og_merch.jpg" alt="OG Merch" class="merch-image">
         <h3>OG Merch</h3>
         <p>6000Ft</p>
-        <!-- "Megnézem" gomb eltávolítva -->
+        <button type="button">Megnézem</button>
     </div>
 
     <div class="merch-option">
-        <img src="karacsonyi_merch.jpg" alt="Karácsonyi Merch" class="merch-image">
         <h3>Karácsonyi Merch</h3>
         <p>6000Ft</p>
-        <!-- "Megnézem" gomb eltávolítva -->
+        <button type="button">Megnézem</button>
     </div>
 
     <div class="merch-option">
         <h3>Mindkettő</h3>
         <p>10000Ft (17% akció)</p>
-        <!-- "Megnézem" gombot itt eltávolítva -->
+        <!-- A "Megnézem" gombot itt eltávolítottam -->
     </div>
 </div>
 
 <!-- Gomb a Gmail linkhez -->
-<a href="mailto:gorduskapodcast@gmail.com?subject=Vásárlás" target="_blank">
+<a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
     <button type="button">E-mail küldése</button>
 </a>
 
