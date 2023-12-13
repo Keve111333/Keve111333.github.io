@@ -14,20 +14,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            heightska PodCast Official Merch</title>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             height: 100vh;
             color: #333;
+            margin-top: 20px; /* Új sor: hozzáadott margin-top érték */
         }
         h1 {
             font-size: 3em;
