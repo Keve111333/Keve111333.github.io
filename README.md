@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,11 @@
 </head>
 <body>
 
-<h1>Küldj e-mailt!</h1>
+<h1>Gorduska PodCast official merch</h1>
+<h2>Merch választék:</h2>
+<h3>1: og merch</h3>
+<h3>2: karácsonyi merch</h3>
+<h3>3: mindkettő (akció)</h3>
 
 <!-- Gomb a Gmail linkhez -->
 <a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
