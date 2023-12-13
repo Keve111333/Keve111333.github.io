@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -53,7 +52,8 @@
         }
         .merch-options {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             margin-top: 30px;
         }
         .merch-option {
@@ -61,14 +61,10 @@
             border: 2px solid #ddd;
             border-radius: 10px;
             transition: transform 0.3s ease;
+            margin-bottom: 20px;
         }
         .merch-option:hover {
             transform: scale(1.05);
-        }
-        .merch-option img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -79,35 +75,32 @@
 
 <div class="merch-options">
     <div class="merch-option">
-        <img src="og_merch.jpg" alt="OG Merch">
         <h3>OG Merch</h3>
         <p>6000Ft</p>
         <button type="button">Megnézem</button>
     </div>
 
     <div class="merch-option">
-        <img src="karacsonyi_merch.jpg" alt="Karácsonyi Merch">
         <h3>Karácsonyi Merch</h3>
         <p>6000Ft</p>
         <button type="button">Megnézem</button>
     </div>
 
     <div class="merch-option">
-        <img src="mindkettő_merch.jpg" alt="Mindkettő Merch">
         <h3>Mindkettő</h3>
         <p>10000Ft (17% akció)</p>
-        <button type="button">Megnézem</button>
+        <!-- A "Megnézem" gombot itt eltávolítottam -->
     </div>
 </div>
 
 <!-- Gomb a Gmail linkhez -->
-<a href="mailto:gorduskapodcast@gmail.com?subject=vásárlás!!!" target="_blank">
+<a href="mailto:gorduskapodcast@gmail.com?subject=Vásárlás" target="_blank">
     <button type="button">E-mail küldése</button>
 </a>
 
 <!-- Gomb a YouTube linkhez -->
 <a href="https://youtu.be/mnjOLKoLiX8" target="_blank">
-    <button type="button">Tutorial (gmairől) </button>
+    <button type="button">Tutorial (fontos) </button>
 </a>
 
 <a href="https://youtube.com/shorts/gc2SFRRbQHM" target="_blank">
