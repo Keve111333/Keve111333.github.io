@@ -1,19 +1,22 @@
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail Küldés</title>
+    <title>Linkek</title>
 </head>
 <body>
 
-<h1>Választási opciók:</h1>
-<h2>1: og minta</h2>
-<h2>2: karácsonyi minta</h2>
-<h1>emailben külld el a választásod! </h1>
+<h1>Küldj e-mailt!</h1>
 
 <!-- Gomb a Gmail linkhez -->
-<a href="mailto:gorduskapodcast@gmail.com" target="_blank">
+<a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
     <button type="button">E-mail küldése</button>
+</a>
+
+<!-- Gomb a YouTube linkhez -->
+<a href="https://youtu.be/mnjOLKoLiX8" target="_blank">
+    <button type="button">tutorial (fontos) </button>
 </a>
 
 </body>
