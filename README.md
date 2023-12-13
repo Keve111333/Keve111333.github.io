@@ -8,9 +8,9 @@
 
 <h1>Gorduska PodCast official merch</h1>
 <h2>Merch választék:</h2>
-<h3>1: og merch</h3>
-<h3>2: karácsonyi merch</h3>
-<h3>3: mindkettő (akció)</h3>
+<h3>1: og merch [6000Ft]</h3>
+<h3>2: karácsonyi merch [6000Ft]</h3>
+<h3>3: mindkettő [10000Ft] (17% akció)</h3>
 
 <!-- Gomb a Gmail linkhez -->
 <a href="mailto:cimzett@gmail.com?subject=AlapertelmezettTargy" target="_blank">
