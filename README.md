@@ -108,11 +108,11 @@
 
 <div class="promo-container">
     <h2>Promód</h2>
-    <p>Használd az alábbi kódot e-mailsorán:</p>
+    <p>Használd az alábbi kódot e-mail üzenet során, ha mind a három terméket megveszed:</p>
     <ul>
-        <li>MINDHAROM2324 - 10% kedvezmény</li>
+        <li>MINDHAROM2324 - 20% kedvezmény</li>
     </ul>
-    <p>A promókódokat a pénztárnál add meg a megfelelő mezőben.</p>
+    
 </div>
 
 </body>
