@@ -22,5 +22,9 @@
     <button type="button">tutorial (fontos) </button>
 </a>
 
+<a href="https://youtube.com/shorts/gc2SFRRbQHM" target="_blank">
+    <button type="button">tutorial (fizetésről) </button>
+</a>
+
 </body>
 </html>
