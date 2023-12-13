@@ -16,7 +16,7 @@
             justify-content: center;
             height: 100vh;
             color: #333;
-            margin-top: 20px; /* Új sor: hozzáadott margin-top érték */
+            margin-top: 0; /* Nullára állítva */
         }
         h1 {
             font-size: 3em;
