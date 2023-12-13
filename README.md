@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -66,6 +67,11 @@
         .merch-option:hover {
             transform: scale(1.05);
         }
+        .merch-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -75,21 +81,23 @@
 
 <div class="merch-options">
     <div class="merch-option">
+        <img src="og_merch.jpg" alt="OG Merch" class="merch-image">
         <h3>OG Merch</h3>
         <p>6000Ft</p>
-        <button type="button">Megnézem</button>
+        <!-- "Megnézem" gomb eltávolítva -->
     </div>
 
     <div class="merch-option">
+        <img src="karacsonyi_merch.jpg" alt="Karácsonyi Merch" class="merch-image">
         <h3>Karácsonyi Merch</h3>
         <p>6000Ft</p>
-        <button type="button">Megnézem</button>
+        <!-- "Megnézem" gomb eltávolítva -->
     </div>
 
     <div class="merch-option">
         <h3>Mindkettő</h3>
         <p>10000Ft (17% akció)</p>
-        <!-- A "Megnézem" gombot itt eltávolítottam -->
+        <!-- "Megnézem" gombot itt eltávolítva -->
     </div>
 </div>
 
