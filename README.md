@@ -78,6 +78,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
+    <audio controls autoplay loop>
+        <source src="jingle-bells-xmas-background-music-60-second-for-short-video-vlog-178759.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 </head>
 <body>
 
