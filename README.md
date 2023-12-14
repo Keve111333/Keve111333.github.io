@@ -62,6 +62,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin: 0 5px; /* Új rész a gombok közötti térköz hozzáadásához */
         }
 
         .button:hover {
@@ -112,7 +113,6 @@
     <ul>
         <li>MINDHAROM2324 - 20% kedvezmény</li>
     </ul>
-    
 </div>
 
 </body>
