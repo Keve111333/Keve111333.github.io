@@ -80,7 +80,7 @@
 </head>
 <body>
 
-<h1>Exkluzív Termékek</h1>
+<h1>Exkluzív Gorduska Merch</h1>
 
 <div class="product">
     <img src="og_merch.jpg" alt="Termék 1">
