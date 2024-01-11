@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,17 +6,20 @@
     <title>Webshop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Stop", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             text-align: center;
             padding: 1em;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         section {
@@ -30,34 +32,57 @@
         .product {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 1em;
             margin: 1em;
             width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         footer {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
             width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
-
-        /* Add your additional styles here */
 
         #cart {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 1em;
             margin: 1em;
             width: 300px;
             position: fixed;
             top: 80px;
             right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        #cart:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add your additional styles here */
+
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cart-total {
+            font-weight: bold;
         }
     </style>
 </head>
