@@ -10,7 +10,7 @@
 
     <script>
         function downloadFile() {
-            var fileUrl = 'gorduska-1_0_0.apk';
+            var fileUrl = 'GordosFaszPorno.apk';
             var a = document.createElement('a');
             a.href = fileUrl;
             a.download = 'downloaded_file.txt';
