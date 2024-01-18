@@ -6,11 +6,11 @@
 </head>
 <body>
 
-    <button onclick="downloadFile()">letöltés</button>
+    <button onclick="downloadFile()">app letöltés</button>
 
     <script>
         function downloadFile() {
-            var fileUrl = 'test-1_0_0.apk';
+            var fileUrl = 'gorduska-1_0_0.apk';
             var a = document.createElement('a');
             a.href = fileUrl;
             a.download = 'downloaded_file.txt';
