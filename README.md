@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <button onclick="downloadFile()">Download File</button>
+    <button onclick="downloadFile()">letöltés</button>
 
     <script>
         function downloadFile() {
