@@ -36,7 +36,9 @@
 
         .caption {
             position: absolute;
-            top: -30px;
+            top: 10px; /* Adjust the top value as needed */
+            left: 50%;
+            transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.5s ease;
             color: #009688; /* Turquoise text color */
@@ -63,7 +65,7 @@
 
     <div class="button-container">
         <button onclick="downloadFile()">Letöltés</button>
-        <div class="caption fade-in">A Gorduska Podcast Eredeti Játéka (DEMO)!</div>
+        <div class="caption fade-in">Katturnrjrnrjrnrjrnrjrjrnrirjrjrjfjfjfj</div>
     </div>
 
     <script>
