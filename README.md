@@ -39,9 +39,18 @@
             top: -30px;
             opacity: 0;
             transition: opacity 0.5s ease;
+            color: #009688; /* Turquoise text color */
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
 
-        .button-container:hover .caption {
+        /* Fading in animation when the page loads */
+        .fade-in {
+            opacity: 1;
+        }
+
+        .button-container .caption.fade-in {
             opacity: 1;
         }
 
@@ -54,10 +63,18 @@
 
     <div class="button-container">
         <button onclick="downloadFile()">Letöltés</button>
-        <div class="caption">Eredeti GORDUSKA Játék (DEMO)!</div>
+        <div class="caption fade-in">A Gorduska Podcast Eredeti Játéka (DEMO)!</div>
     </div>
 
     <script>
+        // Add this script to add the fade-in class after a delay
+        window.onload = function() {
+            var caption = document.querySelector('.caption');
+            setTimeout(function() {
+                caption.classList.add('fade-in');
+            }, 1000); // Adjust the delay in milliseconds as needed
+        };
+
         function downloadFile() {
             var fileUrl = 'Bw.apk';
             var a = document.createElement('a');
