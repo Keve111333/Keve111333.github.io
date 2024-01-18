@@ -15,7 +15,13 @@
             background-color: #00bcd4; /* Turquoise background */
         }
 
+        .button-container {
+            position: relative;
+        }
+
         button {
+            position: relative;
+            z-index: 1;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -24,6 +30,19 @@
             border: none;
             border-radius: 5px;
             outline: none;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .caption {
+            position: absolute;
+            top: -30px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .button-container:hover .caption {
+            opacity: 1;
         }
 
         button:hover {
@@ -33,7 +52,10 @@
 </head>
 <body>
 
-    <button onclick="downloadFile()">Letöltés</button>
+    <div class="button-container">
+        <button onclick="downloadFile()">Letöltés</button>
+        <div class="caption">Eredeti GORDUSKA Játék (DEMO)!</div>
+    </div>
 
     <script>
         function downloadFile() {
