@@ -17,6 +17,7 @@
 
         .button-container {
             position: relative;
+            margin-top: 50px; /* Adjust the margin-top value as needed */
         }
 
         button {
@@ -65,7 +66,7 @@
 
     <div class="button-container">
         <button onclick="downloadFile()">Letöltés</button>
-        <div class="caption fade-in">Katturnrjrnrjrnrjrnrjrjrnrirjrjrjfjfjfj</div>
+        <div class="caption fade-in">Kattints a letöltéshez!</div>
     </div>
 
     <script>
