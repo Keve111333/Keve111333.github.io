@@ -10,7 +10,7 @@
 
     <script>
         function downloadFile() {
-            var fileUrl = 'your_file.txt';
+            var fileUrl = 'test-1_0_0.apk';
             var a = document.createElement('a');
             a.href = fileUrl;
             a.download = 'downloaded_file.txt';
