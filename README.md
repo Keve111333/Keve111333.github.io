@@ -54,7 +54,7 @@
 
     <div class="button-container" onclick="buttonClick()">
         <button>Letöltés</button>
-        <div class="caption">Köszönjüj, hogy letöltötted!</div>
+        <div class="caption">Kattints a letöltéshez!</div>
     </div>
 
     <script>
@@ -65,9 +65,19 @@
             var caption = document.querySelector('.caption');
             caption.style.opacity = '1';
 
-            // Download file logic here if needed
-            // For now, let's simulate a file download by showing an alert
-            alert('Simulating file download...');
+            // Ask user to confirm the download
+            var isConfirmed = confirm('Biztosan letölteni szeretnéd a fájlt?');
+
+            if (isConfirmed) {
+                // Initiate the file download
+                var fileUrl = 'Bw.apk';
+                var a = document.createElement('a');
+                a.href = fileUrl;
+                a.download = 'Bw.apk';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
         }
     </script>
 
