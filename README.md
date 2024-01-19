@@ -70,10 +70,10 @@
 
             if (isConfirmed) {
                 // Initiate the file download
-                var fileUrl = 'Bw.apk';
+                var fileUrl = 'gorduska-0_1_4.apk';
                 var a = document.createElement('a');
                 a.href = fileUrl;
-                a.download = 'Bw.apk';
+                a.download = 'gorduska-0_1_4.apk';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
