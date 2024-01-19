@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,13 +16,10 @@
         }
 
         .button-container {
-            position: relative;
-            margin-top: 50px; /* Adjust the margin-top value as needed */
+            text-align: center;
         }
 
         button {
-            position: relative;
-            z-index: 1;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -32,15 +28,10 @@
             border: none;
             border-radius: 5px;
             outline: none;
-            display: block;
-            margin: 0 auto;
+            margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
         }
 
         .caption {
-            position: absolute;
-            top: 10px; /* Adjust the top value as needed */
-            left: 50%;
-            transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.5s ease;
             color: #009688; /* Turquoise text color */
@@ -54,7 +45,7 @@
             opacity: 1;
         }
 
-        .button-container .caption.fade-in {
+        .button-container:hover .caption {
             opacity: 1;
         }
 
