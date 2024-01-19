@@ -34,7 +34,7 @@
         .caption {
             opacity: 0;
             transition: opacity 0.5s ease;
-            color: #009688; /* Turquoise text color */
+            color: black; /* Turquoise text color */
             font-size: 14px;
             font-weight: bold;
             letter-spacing: 1px;
@@ -54,7 +54,7 @@
 
     <div class="button-container" onclick="buttonClick()">
         <button>Letöltés</button>
-        <div class="caption">Kattints a letöltéshez!</div>
+        <div class="caption">Köszönjük, hogy letöltöd!</div>
     </div>
 
     <script>
@@ -66,7 +66,7 @@
             caption.style.opacity = '1';
 
             // Ask user to confirm the download
-            var isConfirmed = confirm('Biztosan letölteni szeretnéd a fájlt?');
+            var isConfirmed = confirm('Biztos, hogy letöltöd a GORDUSKA Appot?');
 
             if (isConfirmed) {
                 // Initiate the file download
