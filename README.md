@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,12 +40,8 @@
             letter-spacing: 1px;
         }
 
-        /* Fading in animation when the page loads */
-        .fade-in {
-            opacity: 1;
-        }
-
-        .button-container:hover .caption {
+        /* Fading in animation when the button is clicked */
+        .button-container.clicked .caption {
             opacity: 1;
         }
 
@@ -56,28 +52,22 @@
 </head>
 <body>
 
-    <div class="button-container">
-        <button onclick="downloadFile()">Letöltés</button>
-        <div class="caption fade-in">Kattints a letöltéshez!</div>
+    <div class="button-container" onclick="buttonClick()">
+        <button>Letöltés</button>
+        <div class="caption">Köszönjüj, hogy letöltötted!</div>
     </div>
 
     <script>
-        // Add this script to add the fade-in class after a delay
-        window.onload = function() {
-            var caption = document.querySelector('.caption');
-            setTimeout(function() {
-                caption.classList.add('fade-in');
-            }, 1000); // Adjust the delay in milliseconds as needed
-        };
+        function buttonClick() {
+            var buttonContainer = document.querySelector('.button-container');
+            buttonContainer.classList.add('clicked');
 
-        function downloadFile() {
-            var fileUrl = 'Bw.apk';
-            var a = document.createElement('a');
-            a.href = fileUrl;
-            a.download = 'downloaded_file.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
+            var caption = document.querySelector('.caption');
+            caption.style.opacity = '1';
+
+            // Download file logic here if needed
+            // For now, let's simulate a file download by showing an alert
+            alert('Simulating file download...');
         }
     </script>
 
