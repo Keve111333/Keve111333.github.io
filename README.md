@@ -2,84 +2,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download File</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #00bcd4; /* Turquoise background */
-        }
-
-        .button-container {
-            text-align: center;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #009688; /* Turquoise button color */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-            margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
-        }
-
-        .caption {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            color: black; /* Turquoise text color */
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        /* Fading in animation when the button is clicked */
-        .button-container.clicked .caption {
-            opacity: 1;
-        }
-
-        button:hover {
-            background-color: #00796b; /* Darker turquoise on hover */
-        }
-    </style>
+    <title>Weboldal Címe</title>
 </head>
 <body>
 
-    <div class="button-container" onclick="buttonClick()">
-        <button>Letöltés</button>
-        <div class="caption">Köszönjük, hogy letöltöd!</div>
-    </div>
+    <h1>Sunny videa</h1>
 
-    <script>
-        function buttonClick() {
-            var buttonContainer = document.querySelector('.button-container');
-            buttonContainer.classList.add('clicked');
+    <h2>filmeink</h2>
 
-            var caption = document.querySelector('.caption');
-            caption.style.opacity = '1';
+    <h3>Az állarcos gyilkos 1</h3>
+    <video width="640" height="360" controls>
+        <source src="videofile1.mp4" type="video/mp4">
+        A böngésződ nem támogatja a videót.
+    </video>
 
-            // Ask user to confirm the download
-            var isConfirmed = confirm('Biztos, hogy letöltöd a GORDUSKA Appot?');
-
-            if (isConfirmed) {
-                // Initiate the file download
-                var fileUrl = 'gorduska-0_1_4.apk';
-                var a = document.createElement('a');
-                a.href = fileUrl;
-                a.download = 'gorduska-0_1_4.apk';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-            }
-        }
-    </script>
+    <h3>Videó 2</h3>
+    <video width="640" height="360" controls>
+        <source src="videofile2.mp4" type="video/mp4">
+        A böngésződ nem támogatja a videót.
+    </video>
 
 </body>
 </html>
