@@ -11,7 +11,7 @@
     <h2>filmeink</h2>
 
     <h3>Az állarcos gyilkos 1</h3>
-    <iframe width="640" height="360" src="https://youtu.be/EmYWSzwtN8c?si=hSiFrc-wTR6PPI3a" frameborder="0" allowfullscreen></iframe>
+    <iframe width="640" height="360" src="https://m.youtube.com/watch?v=EmYWSzwtN8c" frameborder="0" allowfullscreen></iframe>
 
     <h3>Videó 2</h3>
     <iframe width="640" height="360" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
