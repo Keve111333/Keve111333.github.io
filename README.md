@@ -2,19 +2,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
+    <title>Weboldal Címe</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1, h2, h3 {
+            color: #ecf0f1;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #ecf0f1;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Sunny Videa</h1>
 
-    <h2>filmeink</h2>
+    <h2>Filmeink</h2>
 
-    <h3>Az állarcos gyilkos 1</h3>
-    <iframe width="640" height="360" src="https://m.youtube.com/watch?v=EmYWSzwtN8c" frameborder="0" allowfullscreen></iframe>
+    <button onclick="openVideo('https://m.youtube.com/watch?v=EmYWSzwtN8c')">Az állarcos gyilkos 1</button>
 
-    <h3>Videó 2</h3>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+    <script>
+        function openVideo(videoUrl) {
+            window.open(videoUrl, '_blank');
+        }
+    </script>
 
 </body>
 </html>
