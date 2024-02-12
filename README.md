@@ -1,48 +1,68 @@
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weboldal Címe</title>
+    <title>Able</title>
     <style>
+        /* CSS styles */
         body {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
         }
 
-        h1, h2, h3 {
-            color: #ecf0f1;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff3333; /* Red color */
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 50px;
         }
 
         button {
-            background-color: #3498db;
-            color: #ecf0f1;
-            padding: 10px 20px;
-            font-size: 16px;
+            background-color: #ff3333; /* Red color */
+            color: white;
             border: none;
+            padding: 15px 30px;
+            font-size: 18px;
             border-radius: 5px;
-            margin: 10px;
             cursor: pointer;
+            display: block;
+            margin: 0 auto;
         }
 
         button:hover {
-            background-color: #2980b9;
+            background-color: #cc0000; /* Darker red on hover */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button:focus {
+            outline: none;
         }
     </style>
 </head>
 <body>
-
-    <h1>Sunny Videa</h1>
-
-    <h2>Filmeink</h2>
-
-    <button onclick="openVideo('[https://m.youtube.com/watch?v=EmYWSzwtN8c](https://m.youtube.com/watch?v=a_RgFj8_eoc)')">Az állarcos gyilkos 1</button>
-
-    <script>
-        function openVideo(videoUrl) {
-            window.open(videoUrl, '_blank');
-        }
-    </script>
-
+    <div class="container">
+        <h1>Able DEMO</h1>
+        <p>Download for windows:</p>
+        <a href="123123123" download>
+            <button>Download</button>
+        </a>
+    </div>
 </body>
 </html>
