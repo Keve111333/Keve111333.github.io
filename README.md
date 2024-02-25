@@ -58,9 +58,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>My game</h1>
+        <h1>The Labyrinth BETA</h1>
         <p>Download for windows:</p>
-        <a href="smallm.rar" download>
+        <a href="beta.rar" download>
             <button>Download</button>
         </a>
     </div>
