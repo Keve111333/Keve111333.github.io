@@ -5,64 +5,29 @@
     <title>.</title>
     <style>
         /* CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #ff3333; /* Red color */
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        p {
-            color: #555;
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        button {
-            background-color: #ff3333; /* Red color */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
             color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-        }
-
-        button:hover {
-            background-color: #cc0000; /* Darker red on hover */
-        }
-
-        a {
+            text-align: center;
             text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        button:focus {
-            outline: none;
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>The Labyrinth BETA</h1>
-        <p>Download for windows:</p>
-        <a href="beta.rar" download>
-            <button>Download</button>
-        </a>
-    </div>
+
+<header>
+    <h1>Welcome to Your Website</h1>
+    <a href="labyrinth.html" class="button">The Labyrinth</a> <!-- Button inside anchor tag -->
+</header>
+
 </body>
 </html>
