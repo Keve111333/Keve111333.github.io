@@ -25,8 +25,9 @@
 <body>
 
 <header>
-    <h1>Welcome to Your Website</h1>
-    <a href="labyrinth.html" class="button">The Labyrinth</a> <!-- Button inside anchor tag -->
+    <h1>KEWEB</h1>
+    <a href="labyrinth.html" class="button">The Labyrinth</a>
+    <a href="sunny.html" class="button">Sunny Videa</a>
 </header>
 
 </body>
