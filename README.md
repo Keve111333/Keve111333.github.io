@@ -25,9 +25,9 @@
 <body>
 
 <header>
-    <h1>KEWEB</h1>
-    <a href="labyrinth.html" class="button">The Labyrinth</a>
-    <a href="sunny.html" class="button">Sunny Videa</a>
+    <h1>Welcome to the 𝕂𝕖𝕨𝕖𝕓</h1>
+    <p>This site is not usefull. Please enter a link that is linked to what ever you want to see like Sunny Media or The Labyrinth.</p>
+<h6>Keve</h6>
 </header>
 
 </body>
