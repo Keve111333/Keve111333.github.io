@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Background</title>
+<style>
+  body {
+    background-color: black;
+    color: white; /* Adding white text color for better visibility on black background */
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+  }
+</style>
+</head>
+i<body>
+<h1>hello this is dark!</h>
+</body>
+</html>
