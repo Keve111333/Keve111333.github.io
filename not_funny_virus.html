@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download virus</title>
+</head>
+<body>
+
+<!-- Button to trigger download -->
+<button onclick="downloadFile()">Download File</button>
+
+<script>
+function downloadFile() {
+    // Replace 'path_to_your_file' with the path to the file you want to download
+    var fileUrl = 'notfunnyV2.py';
+    
+    // Create an anchor element
+    var a = document.createElement('a');
+    a.href = fileUrl;
+    
+    // Set the file name
+    var fileName = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+    a.download = fileName;
+    
+    // Append the anchor element to the body
+    document.body.appendChild(a);
+    
+    // Trigger the click event of the anchor element
+    a.click();
+    
+    // Remove the anchor element from the body
+    document.body.removeChild(a);
+}
+</script>
+
+</body>
+</html>
