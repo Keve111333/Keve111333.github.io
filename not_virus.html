@@ -2,10 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>98.9% not virus</title>
+    <title>Flashing Background with Moving Image</title>
     <style>
         body {
-            animation: flash 0.01s infinite;
+            margin: 0;
+            overflow: hidden;
+            animation: flash 0.1s infinite;
         }
 
         @keyframes flash {
@@ -13,9 +15,57 @@
             50% { background-color: white; }
             100% { background-color: black; }
         }
+
+        #dvd {
+            position: absolute;
+            width: 200px; /* Increased size */
+            height: 200px; /* Increased size */
+            background-image: url('https://keweb.org/error.jpg'); /* Replace with your image URL */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
-    <p>penis penis penis penis penis penis penis penis</p>
+    <div id="dvd"></div>
+
+    <script>
+        let dvd = document.getElementById('dvd');
+        
+        let dvdWidth = dvd.offsetWidth;
+        let dvdHeight = dvd.offsetHeight;
+
+        let containerWidth = window.innerWidth;
+        let containerHeight = window.innerHeight;
+
+        let x = Math.random() * (containerWidth - dvdWidth);
+        let y = Math.random() * (containerHeight - dvdHeight);
+        let xSpeed = 2;
+        let ySpeed = 2;
+
+        function moveDVD() {
+            x += xSpeed;
+            y += ySpeed;
+
+            if (x + dvdWidth >= containerWidth || x <= 0) {
+                xSpeed = -xSpeed;
+            }
+            if (y + dvdHeight >= containerHeight || y <= 0) {
+                ySpeed = -ySpeed;
+            }
+
+            dvd.style.left = x + 'px';
+            dvd.style.top = y + 'px';
+
+            requestAnimationFrame(moveDVD);
+        }
+
+        moveDVD();
+
+        window.addEventListener('resize', () => {
+            containerWidth = window.innerWidth;
+            containerHeight = window.innerHeight;
+        });
+    </script>
 </body>
 </html>
