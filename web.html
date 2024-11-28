@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Logger</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <h1>hello</h1>
+  
+  <script>
+    // Function to fetch the IP address using a third-party service
+    $.get("https://api.ipify.org?format=json", function(data) {
+        var ip = data.ip; // The client's public IP address
+        console.log("Client's IP address: " + ip);
+
+        // Send the IP address to your server for logging
+        $.post("/log-ip", { ip: ip }, function(response) {
+            console.log("IP logged successfully");
+        });
+    });
+  </script>
+</body>
+</html>
