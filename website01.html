@@ -7,7 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <h1>hello</h1>
+  <h1>IP Logger</h1>
   
   <script>
     // Function to fetch the IP address using a third-party service
@@ -15,9 +15,18 @@
         var ip = data.ip; // The client's public IP address
         console.log("Client's IP address: " + ip);
 
-        // Send the IP address to your server for logging
-        $.post("/log-ip", { ip: ip }, function(response) {
-            console.log("IP logged successfully");
+        // Send the IP address to your server for logging (with JSON format)
+        $.ajax({
+            url: "/log-ip",
+            type: "POST",
+            contentType: "application/json", // Set the content type to JSON
+            data: JSON.stringify({ ip: ip }), // Convert the IP object to a JSON string
+            success: function(response) {
+                console.log("IP logged successfully");
+            },
+            error: function(err) {
+                console.error("Error logging IP:", err);
+            }
         });
     });
   </script>
