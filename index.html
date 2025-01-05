@@ -3,111 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in - Google Accounts</title>
+    <title>DM Linux</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f3f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
         }
-        .container {
-            width: 392px;
-            padding: 40px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+        header {
+            background: linear-gradient(to right, #333, #C0DE63);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #C0DE63;
+        }
+
+        main {
+            padding: 2rem;
             text-align: center;
         }
-        .logo {
-            width: 75px;
-            margin-bottom: 20px;
+
+        main h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #333;
         }
-        h1 {
-            font-size: 24px;
-            color: #202124;
-            margin: 0;
+
+        main p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
         }
-        p {
-            font-size: 14px;
-            color: #5f6368;
-            margin: 0;
-            margin-bottom: 20px;
-        }
-        .input-group {
+
+        .features {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .feature {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            max-width: 300px;
             text-align: left;
-            margin-top: 20px;
+            transition: transform 0.3s;
         }
-        .input-group label {
-            font-size: 14px;
-            color: #5f6368;
-            margin-bottom: 5px;
+
+        .feature:hover {
+            transform: scale(1.05);
         }
-        .input-group input {
-            padding: 10px;
-            border: 1px solid #dadce0;
-            border-radius: 4px;
-            font-size: 14px;
-            margin-bottom: 20px;
-            width: 100%;
+
+        .feature h3 {
+            margin: 0 0 0.5rem;
+            color: #C0DE63;
         }
-        .next-button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1a73e8;
+
+        .feature p {
+            margin: 0;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
             color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 14px;
-            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 2rem;
         }
-        .next-button:hover {
-            background-color: #165bca;
-        }
-        .footer {
-            font-size: 12px;
-            color: #5f6368;
-            margin-top: 20px;
-        }
-        .footer a {
-            color: #1a73e8;
+
+        footer a {
+            color: #C0DE63;
             text-decoration: none;
         }
     </style>
-    <script>
-        function submitEmail() {
-            const email = document.getElementById("email").value;
-            if (email) {
-                localStorage.setItem("email", email);
-                window.location.href = "password.html";
-            } else {
-                alert("Please enter your email.");
-            }
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
-        <img src="https://ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Google Logo" class="logo">
-        <h1>Sign in</h1>
-        <p>to continue to Gmail</p>
-        <div class="input-group">
-            <label for="email">Email or phone</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email or phone">
-        </div>
-        <div class="input-group">
-            <button class="next-button" onclick="submitEmail()">Next</button>
-        </div>
-        <div class="footer">
-            <p><a href="#">Forgot email?</a></p>
-            <p>Not your computer? <a href="#">Use Guest mode</a> to sign in privately.</p>
-            <p><a href="#">Create account</a></p>
-        </div>
-    </div>
+    <header>
+        <h1>DM Linux</h1>
+    </header>
+    <main>
+        <h2>Welcome to DM Linux</h2>
+        <p>The lightweight and powerful operating system made by DM Studios.</p>
+
+        <section id="features" class="features">
+            <div class="feature">
+                <h3>Fast & Lite</h3>
+                <p>DM Linux is able to run efficiently, even on older hardware. This is because it's a single Python script and has no GUI.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy to use</h3>
+                <p>DM Linux is based on real Linux and has a clear help menu!</p>
+            </div>
+        </section>
+
+        <a id="download" href="DMLinux.zip" download style="display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: #C0DE63; color: white; font-weight: bold; text-decoration: none; border-radius: 4px; transition: background 0.3s;">
+            Download DM Linux
+        </a>
+    </main>
+    <footer>
+        &copy; 2025 DM Linux. Made with 💚. <a href="#about">Learn More</a>
+    </footer>
 </body>
 </html>
