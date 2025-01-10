@@ -17,6 +17,12 @@
             padding: 20px;
             text-align: center;
         }
+        .score {
+            font-size: 20px;
+            margin: 10px 0;
+            text-align: center;
+            color: #333;
+        }
         .container {
             padding: 20px;
             text-align: center;
@@ -55,6 +61,7 @@
     <header>
         <h1>Ternyik's</h1>
         <p>Mit veszel dagadék?</p>
+        <div class="score" id="score">Pontok: 0/100000</div>
     </header>
     <div class="container">
         <!-- Menu Items -->
@@ -63,22 +70,32 @@
             <h3>Ternyik's menü</h3>
             <p>Uránium burger, Patkányméreglé és egy kis szárított egérbőr.</p>
             <p><strong>3 Ft</strong></p>
-            <button>Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
+            <button onclick="addPoint()">Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
         </div>
         <div class="menu-item">
             <img src="menu (1).png" alt="Fries & Drink">
             <h3>Ábel menü</h3>
             <p>1000 Denevér burger, 5000 Szalmapityóka és 100 liter Cock-a-Cola</p>
             <p><strong>3.99 Ft</strong></p>
-            <button>Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
+            <button onclick="addPoint()">Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
         </div>
         <div class="menu-item">
             <img src="file-7UR6EtE86LruZTqdeZMeGL.webp" alt="Fries & Drink">
             <h3>Batu menü</h3>
             <p>Egy igazi batyu, zsidóhús és macskaburger.</p>
             <p><strong>3.99 Ft</strong></p>
-            <button>Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
+            <button onclick="addPoint()">Megrendelem és ezzel egyet értek azzal, hogy megdöglök tőle.</button>
         </div>
     </div>
+
+    <script>
+        let points = 0;
+
+        function addPoint() {
+            points++;
+            const scoreElement = document.getElementById('score');
+            scoreElement.textContent = `Pontok: ${points}/100000`;
+        }
+    </script>
 </body>
 </html>
